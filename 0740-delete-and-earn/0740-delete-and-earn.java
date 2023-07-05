@@ -1,6 +1,6 @@
 class Solution {
   public int deleteAndEarn(int[] nums) {
-    // Reduce to 198. House Robber
+    
     int[] bucket = new int[10001];
 
     for (final int num : nums)
