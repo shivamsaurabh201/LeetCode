@@ -19,14 +19,14 @@ class Solution {
 
     getDists(root.left, target, nodeToDist);
     if (nodeToDist.containsKey(root.left)) {
-      // The target is in the left subtree
+      
       nodeToDist.put(root, nodeToDist.get(root.left) + 1);
       return;
     }
 
     getDists(root.right, target, nodeToDist);
     if (nodeToDist.containsKey(root.right))
-      // The target is in the right subtree
+      
       nodeToDist.put(root, nodeToDist.get(root.right) + 1);
   }
 
